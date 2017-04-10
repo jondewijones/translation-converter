@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translations file converter</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+<main role="main">
+    <div class="wrapper">
+
+        <h1>Translations file converter</h1>
+        <p>This tool takes translations and creates two outputs using the text left of the pipe as the variable name.</p>
+
+        <form id="input-form">
+            <label for="input" id="input-label">Enter translations seperated by a pipe ( | )</label>
+            <textarea id="input" name="inputtext" aria-required="true">English|Welsh</textarea>
+
+            <button id="submit" class="button" aria-controls="english-output welsh-output"><span>Convert </span></button>
+        </form>
+
+        <div class="output">
+            <label for="english-output">Converted English</label>
+            <textarea id="english-output" ></textarea>
+        </div>
+        <div class="output">
+            <label for="welsh-output">Converted Welsh</label>
+            <textarea id="welsh-output" ></textarea>
+        </div>
+    </div>
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
